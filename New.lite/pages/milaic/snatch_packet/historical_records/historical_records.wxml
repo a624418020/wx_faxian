@@ -1,0 +1,48 @@
+<!--pages/milaic/snatch_packet/historical_records/historical_records.wxml-->
+<view class='headlines_view'>
+  <view bindtap='issue' style='{{issue_style}}' class='issue'>我发出的</view>
+  <view bindtap='receive' style='{{receive_style}}' class='receive'>我收到的</view>
+</view>
+<image class='head_logo' src='{{head_logo}}'></image>
+<view class='name'>
+  <view class='name_1'>{{nickname}}</view>
+  <view wx:if="{{receive_style!=''}}" class='name_2'>共收到</view>
+  <view wx:if="{{issue_style!=''}}" class='name_2'>共发出</view>
+</view>
+<view class='prompt_title'>
+  <view class='prompt_title_view'>
+    <view class='prompt_title_text1'>金额（元）</view>
+    <view class='prompt_title_text2'>{{user_sum[0].sums}}</view>
+  </view>
+  <view class='prompt_title_view'>
+    <view class='prompt_title_text1'>数量（个）</view>
+    <view class='prompt_title_text2'>{{user_sum[0].counts}}</view>
+  </view>
+</view>
+<!-- <view class='recordingHints'>您没有任何记录哦~</view> -->
+<!-- 我发出的 -->
+<view style='background: white;' wx:if="{{issue_style!=''}}" wx:for='{{user_list}}' wx:key='key'>
+  <view class='records_list' bindtap='click' data-id='{{item.id}}'>
+    <view class='records_list_view'>
+      <view class='records_list_name'>{{item.text}}</view>
+      <view class='records_list_time'>{{item.create_time}}</view>
+    </view>
+    <view>
+      <view class='records_list_money'>{{item.money}}元</view>
+      <view class='records_list_number'>{{item.number-item.surplus_num}}/{{item.number}}</view>
+    </view>
+  </view>
+  <view class='segmenting_line'></view>
+</view>
+<!-- 我收到的 -->
+<view style='background: white;' wx:if="{{receive_style!=''}}" wx:for='{{user_list}}' wx:key='key'>
+  <view class='records_list' bindtap='click' data-id='{{item.id}}'>
+    <image wx:if='{{1}}' class='records_list_logo' src='{{item.sponsor_avatar}}'></image>
+    <view class='records_list_view'>
+      <view class='records_list_name'>{{item.nickname}}</view>
+      <view class='records_list_time'>{{item.create_time}}</view>
+    </view>
+    <view class='records_list_money' style='height: 76rpx;'>{{item.money}}元</view>
+  </view>
+  <view class='segmenting_line'></view>
+</view>

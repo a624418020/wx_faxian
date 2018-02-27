@@ -1,0 +1,49 @@
+/* pages/topic/sort/sort.wxss */
+.list {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 412rpx;
+  margin-bottom: 20rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  background: #21242a;
+}
+
+.frame {
+  width: 546rpx;
+  height: 296rpx;
+  z-index: 10;
+}
+
+.title {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center; /*水平居中*/
+  line-height: 412rpx; /*行距设为与div高度一致*/
+  color: white;
+  font-size: 40rpx;
+  z-index: 100;
+}

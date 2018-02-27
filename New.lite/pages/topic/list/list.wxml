@@ -1,0 +1,26 @@
+<!--pages/topic/list/list.wxml-->
+<view class='list'>
+  <image class='bg_image' src='http://b.milaipay.com/Public/img/5a6e74a9ab6f5.jpg'></image>
+  <view class='mask'></view>
+  <image class='frame' src='/images/frame.png'></image>
+  <view class='title'>最会做饭的那些人</view>
+</view>
+<view class='description'>素食对动物是一种慈善，对地球是一种慈善，如果把慈善当做一种为他人做的一种善行，素食对自己和家人也是一种慈善。现如今，崇尚养生、关注健康的人越来越多，在过去的国际素食日中，不仅对身体好，还有瘦身美容的效果。所以我们要多吃肉肉肉！</view>
+<block wx:for="{{[1,2,3]}}">
+  <view class='body'>
+    <image class='body_image' src='http://b.milaipay.com/Public/img/5a6e74a9ab6f5.jpg'></image>
+    <view class='body_title'>纯正意大利面的制作方法</view>
+    <view class='body_bar'>
+      <view class='read'>
+        <view>阅读</view>
+        <view style='margin-left: 30rpx;'>12365</view>
+      </view>
+      <view class='read'>
+        <image class='approve_image' src='/images/icon_like(1).png'></image>
+        <view style='margin-left: 10rpx;'>12365</view>
+      </view>
+      <view class='body_time'>01-01</view>
+    </view>
+  </view>
+
+</block>

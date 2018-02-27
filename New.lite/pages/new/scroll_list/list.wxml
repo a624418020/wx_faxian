@@ -1,0 +1,75 @@
+<!--pages/new/scroll_list/list.wxml-->
+<view class='getheight'>
+<view class='head'>
+  <view class='date_d' animation="{{animationData}}">
+    <view class='calendar' style='opacity:{{opacity}}'>
+      <view class='day'>{{display_data[0][1]}}</view>
+      <view class='month'>{{display_data[0][0]}}</view>
+    </view>
+    <view class='calendar'>
+      <view class='day'>{{display_data[1][1]}}</view>
+      <view class='month'>{{display_data[1][0]}}</view>
+    </view>
+    <view class='calendar' style='opacity:{{opacity}}'>
+      <view class='day'>{{display_data[2][1]}}</view>
+      <view class='month'>{{display_data[2][0]}}</view>
+    </view>
+  </view>
+  <view class='search'>
+    <view class='search_view'>
+      <image class='search_image' src='/images/icon_search_search.png'></image>
+      <text class='search_title'>OFO月卡限量疯抢中</text>
+    </view>
+    <image class='search_logo' src='/images/pic_ofo.png'> </image>
+  </view>
+</view>
+<scroll-view class="content" scroll-into-view="{{toView}}" scroll-y="true" scroll-with-animation="true" bindscroll="scroll" lower-threshold="500" bindscrolltolower="scrolltolower">
+  <block wx:for="{{data}}" wx:key='key'>
+    <view id="{{'view'+index}}">
+      <block wx:for="{{item.article}}" wx:key='key'>
+        <view wx:if="{{item.tips==1}}" class='item_B'>
+          <image class='item_B_image' src='{{item.logo}}'></image>
+          <view class='item_B_bar'>
+            <view class='item_B_bar_t'>{{item.title[0]}}</view>
+            <view class='item_B_bar_c'>{{item.title[1]}}</view>
+            <view class='item_B_bar_r'>
+              <view class='item_B_bar_r_1'>
+                <view class='r_height'>阅读</view>
+                <view wx:if="{{item.read_count<100000}}" class='r_height '>{{item.read_count}}</view>
+                <view wx:else class='r_height '>100000+</view>
+              </view>
+              <view class='item_B_bar_r_1 number'>
+                <image class='item_B_bar_r_1_i' src='/images/icon_like(1).png'></image>
+                <view class='r_height '>{{item.dz}}</view>
+              </view>
+            </view>
+          </view>
+          <view class='line'></view>
+        </view>
+        <view wx:if="{{item.tips!=1}}" class='item_S'>
+          <view class='item_S_t'>— {{item.title[0]}} —</view>
+          <image class='item_S_i' src='{{item.logo}}'></image>
+          <view class='item_S_i_b'>
+            <view class='item_S_i_b_t'>· {{item.title[1]}}</view>
+            <view class='item_S_i_v'>
+              <image class='item_S_i_v_l' src='/images/faxianlogo.png'></image>
+              <view class='item_S_bar_r'>
+                <view class='item_B_bar_r_1 number'>
+                  <image class='item_B_bar_r_1_i' src='/images/icon_like(1).png'></image>
+                  <view class='r_height '>{{item.dz}}</view>
+                </view>
+                <view class='item_B_bar_r_1 '>
+                  <view class='r_height'>阅读</view>
+                  <view class='r_height '>{{item.read_count}}</view>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='line'></view>
+        </view>
+      </block>
+    </view>
+  </block>
+
+</scroll-view>
+</view>

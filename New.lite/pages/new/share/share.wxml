@@ -1,0 +1,27 @@
+<!--pages/new/share/share.wxml-->
+<blcok wx:if="{{image==1}}">
+  <canvas canvas-id="myCanvas" style="width: {{screenWidth}}px; height:{{screenHeight}}px;" />
+</blcok>
+<blcok wx:else>
+  <image src="{{image}}" class="share" mode="aspectFill"></image>
+</blcok>
+
+
+<view wx:if="{{button}}" class="button" bindtap="button">
+  <image class="image" src="/images/icon_freindcircle.png"></image>
+  <view class="text">分享到朋友圈</view>
+</view>
+<view class="pop_b" wx:if="{{visible}}">
+</view>
+<view class="pop_a" wx:if="{{visible}}" bindtap="visible">
+  <view class="pop">
+    <image class="pop_image" src="/images/pic_tanchuang.png"></image>
+    <view class="pop_text">
+      <view class="text1">还差一步</view>
+      <text class="text2">图片已保存到相册 快去打开微信朋友圈分享图片哦~
+      </text>
+      <view class="line"></view>
+      <view class="ok">确定</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,412 @@
+.head {
+  width: 100%;
+  height: 670rpx;
+  background: #d85940;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head_logo {
+  margin-top: 20rpx;
+  height: 180rpx;
+  width: 180rpx;
+  border-radius: 50%;
+  border: 4rpx solid rgb(255, 229, 181);
+}
+
+.head_name {
+  margin-top: 24rpx;
+  font-size: 34rpx;
+  color: rgb(255, 229, 181);
+}
+
+.head_key {
+  color: #eccf9b;
+  font-size: 40rpx;
+}
+
+.key_image {
+  width: 40rpx;
+  height: 48rpx;
+  margin-right: 16rpx;
+}
+
+.head_surplus_n {
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  color: #ffe5b5;
+}
+
+.head_surplus_m {
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  color: #ffe5b5;
+}
+
+.head_amount {
+  margin-top: 20rpx;
+  font-size: 96rpx;
+  color: #ffe5b5;
+}
+
+.head_bt {
+  height: 86rpx;
+  width: 70%;
+  margin-top: 52rpx;
+  margin-bottom: 80rpx;
+  text-align: center; /*水平居中*/
+  line-height: 86rpx; /*行距设为与div高度一致*/
+  border-radius: 86rpx;
+  font-size: 32rpx;
+  background: #47b250;
+  color: white;
+}
+.head_bt_end {
+  height: 86rpx;
+  width: 70%;
+  margin-top: 52rpx;
+  margin-bottom: 80rpx;
+  text-align: center; /*水平居中*/
+  line-height: 86rpx; /*行距设为与div高度一致*/
+  border-radius: 86rpx;
+  font-size: 32rpx;
+  background: rgb(246,175,155);
+  color: rgb(255,225,202);
+}
+
+button[disabled][type="default"], wx-button[disabled]:not([type]) {
+  color: #be432b;
+  background-color: #983623;
+}
+
+button::after {
+  display: none;
+}
+
+.bar {
+  width: 80%;
+  height: 40rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.i_t_type {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 30rpx;
+}
+
+.contact {
+  position: fixed;
+  width: 200rpx;
+  height: 72rpx;
+  bottom: 100rpx;
+  right: -60rpx;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 30rpx;
+  border: 1px solid #e35454;
+  border-radius: 72rpx;
+  background: #eb715e;
+  padding-left: 0;
+  z-index: 10;
+}
+
+.contact_i {
+  margin-left: 16rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.contact_t {
+  margin-left: 16rpx;
+  font-size: 24rpx;
+  color: white;
+}
+
+.rule {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.rule_t {
+  margin-left: 16rpx;
+  margin-right: 16rpx;
+  font-size: 24rpx;
+  color: #ffe5b5;
+}
+
+.i_t_type_image {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 16rpx;
+}
+
+.rule_i {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.button {
+  margin-top: 600rpx;
+}
+
+.waist {
+  margin-left: 5%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  color: #888;
+}
+
+.list {
+  width: 90%;
+  height: 160rpx;
+  display: flex;
+  align-items: center;
+  border: 1px solid #f0f0f0;
+  border-radius: 16rpx;
+  margin-left: 5%;
+  margin-bottom: 20rpx;
+  justify-content: flex-start;
+}
+
+.list_view {
+  height: 110rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  margin-right: 26rpx;
+  justify-content: space-between;
+}
+
+.list_name {
+  color: rgb(7, 23, 53);
+  font-size: 28rpx;
+}
+
+.list_time {
+  color: #8c8c8c;
+  font-size: 24rpx;
+}
+
+.line {
+  width: 100%;
+  height: 20rpx;
+  background: aqua;
+}
+
+.help_view {
+  display: flex;
+  height: 110rpx;
+  font-size: 28rpx;
+  text-align: right;
+  margin-right: 30rpx;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #071735;
+  flex-grow: 1;
+}
+
+.volunteer_logo {
+  margin-left: 26rpx;
+  height: 104rpx;
+  width: 104rpx;
+  border-radius: 8rpx;
+}
+
+.view1 {
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  left: 0;
+  top: 58vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mkf {
+  width: 50px;
+  height: 50px;
+}
+
+.recording {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #9cf;
+  border-radius: 50%;
+  transform-origin: 50% 50%;
+}
+
+.mask {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.6;
+  background: #21242a;
+  z-index: 100;
+}
+
+.rule_hint {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 101;
+}
+
+.rule_hint_rb {
+  margin-top: 200rpx;
+  width: 618rpx;
+  height: 752rpx;
+}
+
+.rule_hint_t {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 250rpx;
+  left: 0;
+  color: #ffe5b5;
+  font-size: 34rpx;
+}
+
+.rule_hint_c {
+  width: 66%;
+  max-height: 400rpx;
+  position: fixed;
+  font-size: 26rpx;
+  line-height: 40rpx;
+  color: white;
+  top: 360rpx;
+}
+
+.abort {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 152rpx;
+  height: 46rpx;
+  border: 1rpx solid #922813;
+  border-radius: 46rpx;
+  top: 840rpx;
+  font-size: 28rpx;
+  color: #922813;
+}
+
+.rule_hint_lg {
+  position: fixed;
+  width: 136rpx;
+  height: 136rpx;
+  top: 300rpx;
+}
+
+.from {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 470rpx;
+  left: 0;
+  color: white;
+  font-size: 34rpx;
+}
+
+.from_rd {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 530rpx;
+  left: 0;
+  color: #922813;
+  font-size: 34rpx;
+}
+
+.voice {
+  width: 184rpx;
+  height: 60rpx;
+  font-size: 24rpx;
+  padding-left: 10rpx;
+  color: rgb(153, 153, 153);
+  line-height: 60rpx;
+  background: rgb(248, 248, 248);
+  border-radius: 10rpx;
+  border: 2rpx solid rgb(213, 213, 213);
+}
+
+.from_ml {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 600rpx;
+  font-size: 80rpx;
+  left: 0;
+  color: #ffe5b5;
+}
+
+.from_tx {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 740rpx;
+  font-size: 28rpx;
+  left: 0;
+  color: #922813;
+}
+
+.key_fail {
+  margin-top: 200rpx;
+  width: 612rpx;
+  height: 544rpx;
+}
+
+.key_fail_c {
+  width: 66%;
+  max-height: 400rpx;
+  position: fixed;
+  font-size: 34rpx;
+  line-height: 40rpx;
+  text-align: center;
+  color: white;
+  top: 500rpx;
+}
+
+.sum_view {
+  margin-top: 16rpx;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 52rpx;
+}
+
+.sum {
+  font-size: 106rpx;
+  color: rgb(255, 229, 181);
+}
+
+.sum11 {
+  font-size: 32rpx;
+  color: rgb(255, 229, 181);
+}
+
+.key_abort {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 152rpx;
+  height: 46rpx;
+  border: 1rpx solid #922813;
+  border-radius: 46rpx;
+  top: 640rpx;
+  font-size: 28rpx;
+  color: #922813;
+}

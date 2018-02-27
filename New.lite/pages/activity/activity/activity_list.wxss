@@ -1,0 +1,67 @@
+/* pages/topic/activity1/activity_list1.wxss */
+
+.name{
+  margin-top: 36rpx;
+  text-align:center;
+}
+.line{
+  height: 4rpx;
+  width: 40rpx;
+  margin-top: 20rpx;
+  margin-bottom: 28rpx;
+  margin-left: 355rpx;
+  text-align:center;
+  background: #21242A;
+}
+.logo_image1{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  width: 100%;
+  height: 36rpx;
+  background-repeat: no-repeat;
+  background-origin: cover;
+  background-position: center;
+  background-size: auto 100%;
+  
+}
+.scroll-view {
+  height: 552rpx;
+}
+.bc_green{
+  height:400rpx;
+  width: 686rpx;
+  margin-left: 32rpx;
+
+}
+
+.bc_red{
+  height:400rpx;
+  width: 100%;
+  background: red;
+}
+.content{
+  font-size: 26rpx;
+  color: #21242A;
+  text-align:center;
+  margin-top: 30rpx;
+}
+.indicator{
+  width: 100%;
+  margin-top: 40rpx;
+  display: flex;
+  justify-content:center;
+}
+.dot{
+width: 12rpx;
+height: 12rpx;
+border-radius: 50%;
+margin-left: 16rpx;
+margin-right: 16rpx;
+background: gray;
+
+}
+.line_16{
+  width: 100%;
+  height: 12rpx;
+  background: #F9F8F9;
+}

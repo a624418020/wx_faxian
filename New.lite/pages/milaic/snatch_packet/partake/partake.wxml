@@ -1,0 +1,14 @@
+<!--pages/milaic/snatch_packet/partake/partake.wxml-->
+ <canvas wx:if='{{FriendsCircle}}' class='canvas' canvas-id="myCanvas" /> 
+<image src='/images/pic_bag.png' class='BG'></image>
+<image src='{{logo}}' class='loge'></image>
+
+<view class='title1'>发了一个语音口令红包</view>
+<view class='title2'>{{password}}</view>
+<image class='logo_bg' src='/images/pic_white.png'></image>
+<image class='logo' src='{{image}}'></image>
+<view class='fx_bt'>
+  <button class='friends' open-type="share" >群发到好友或群聊</button>
+  <view class='FriendsCircle' bindtap='FriendsCircle'>生成朋友圈分享图</view>
+  <view class='return1' bindtap='return_bt'>返回</view>
+</view>

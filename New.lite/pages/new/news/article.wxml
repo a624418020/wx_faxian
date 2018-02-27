@@ -1,0 +1,72 @@
+<!--pages/new/news/article.wxml-->
+<web-view wx:if="{{url!=null}}" src="{{url}}"></web-view>
+<block wx:if="{{url==null}}" >
+<block wx:if="{{activity_v}}">
+  <view class='opacity'></view>
+  <view class='activity_main'>
+    <image class='pop_ups' bindtap='activity' src="/images/activity.jpg"></image>
+    <image class='pop_close' bindtap='close_activity' src="/images/icon_close.png"></image>
+  </view>
+</block>
+
+<block wx:if="{{true}}">
+  <view class="viewbtbar">
+    <view class="class_01">
+      <view class="read">
+        <image src="/images/icon_read(1).png" class="like1"></image>
+        <view class="read2">{{read}}</view>
+      </view>
+      <view class="like" bindtap="like">
+        <image wx:if="{{is_dz==0}}" src="/images/icon_like(1).png" class="like1"></image>
+        <image wx:else src="/images/icon_like_grey.png" class="like1"></image>
+        <view class="like2">{{dz}}</view>
+      </view>
+    </view>
+    <view class="class_02">
+      <view class="like_sc" bindtap="sc">
+        <image wx:if="{{is_sc==0}}" src="/images/icon_collect.png" class="like1"></image>
+        <image wx:else src="/images/icon_collect_yellow.png" class="like1"></image>
+      </view>
+      <block wx:if="{{tips==1}}">
+        <view class="search_view1" bindtap="share">
+          <image src="/images/icon_share.png" class="search_image"></image>
+          <view class="textfx">分享到朋友圈</view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+</block>
+
+<view class="head">{{name}}</view>
+<view class="subtitle">
+  <view class="time">{{time}}</view>
+  <view class="is_yc" wx:if="{{is_yc}}">{{is_yc}}</view>
+  <view class="time">{{author}}</view>
+</view>
+<view class="videosection" wx:if="{{videosrc}}">
+  <video id="myVideo" src="{{videosrc}}" poster="http://{{videopic}}" enable-danmu controls></video>
+</view>
+<import src="../../../wxParse/wxParse.wxml" />
+<view class="participate" bindtap="participate" wx:if="{{false}}">
+  <view class="participate_button">我要参与</view>
+</view>
+<view class="wxParse">
+  <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  <block wx:if="{{ad_or&&ad_show}}">
+    <view class="ad_line">
+      <view class="ad_a"></view>
+      <view class="ad_text">广告</view>
+      <view class="ad_a"></view>
+    </view>
+    <swiper class='myswiper' indicator-dots="true" autoplay="true" interval="3000" duration="500">
+      <block wx:for="{{ad_data}}">
+        <swiper-item>
+          <image src="{{item.imglist}}" mode="aspectFill" bindtap='onclick_ad' data-id="{{item.id_detail}}"    data-type="{{item.index_type}}" class='swiper_image' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </block>
+    <view class="read_kg"> </view>
+</view>
+</block>

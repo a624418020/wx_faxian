@@ -1,0 +1,9 @@
+<!--pages/topic/sort/sort.wxml-->
+<block wx:for='{{[1,2,3]}}' wx:key='key'>
+  <view class='list'>
+    <image class='bg_image' src='http://b.milaipay.com/Public/img/5a6e74a9ab6f5.jpg'></image>
+    <view class='mask'></view>
+    <image class='frame' src='/images/frame.png'></image>
+        <view class='title'>最会做饭的那些人</view>
+  </view>
+</block>

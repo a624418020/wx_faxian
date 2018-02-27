@@ -1,0 +1,107 @@
+/* pages/milaic/mine/mine.wxss */
+
+page {
+  background: rgb(245, 245, 245);
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 504rpx;
+  background: rgb(33, 36, 42);
+}
+
+.avatar {
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 50%;
+  margin-top: 82rpx;
+  border: 4rpx solid white;
+}
+
+.name {
+  color: white;
+  font-size: 32rpx;
+  margin-top: 20rpx;
+}
+
+.line {
+  height: 1rpx;
+  width: 680rpx;
+  margin-top: 56rpx;
+  background: rgb(235, 235, 235);
+}
+
+.view_01 {
+  width: 60%;
+  flex: 1; /*余下全部撑满*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.bt_participate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.image_01 {
+  width: 76rpx;
+  height: 76rpx;
+}
+
+.participate {
+  color: rgb(235, 235, 235);
+  font-size: 22rpx;
+  padding-bottom: 10rpx;
+}
+
+.list {
+  height: 92rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  background: white;
+}
+
+.notice {
+  color: rgb(33, 36, 42);
+  font-size: 28rpx;
+  line-height: 120rpx;
+  margin-left: 20rpx;
+}
+
+.image_02 {
+  height: 26rpx;
+  width: 16rpx;
+}
+
+.image_03 {
+  height: 68rpx;
+  width: 68rpx;
+}
+
+.line1 {
+  height: 2rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  background: rgb(241, 241, 2415);
+}
+
+.view_02 {
+  display: flex;
+  align-items: center;
+}
+
+.line2 {
+  background: rgb(241, 241, 241);
+  height: 76rpx;
+  line-height: 76rpx;
+  font-size: 20rpx;
+  padding-left: 30rpx;
+  color: rgb(153, 153, 153);
+}

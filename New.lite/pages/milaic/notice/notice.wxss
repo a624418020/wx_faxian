@@ -1,0 +1,66 @@
+/* pages/milaic/notice/notice.wxss */
+
+.head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1rpx;
+  -webkit-box-shadow: 0 0 3px;
+  -moz-box-shadow: 0 0 3px;
+  box-shadow: 0 0 3px;
+}
+
+.head1 {
+  height: 23rpx;
+}
+
+.parent {
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  margin-left: 40rpx;
+  margin-right: 38rpx;
+  height: 180rpx;
+  display: flex;
+  justify-content: row;
+  align-items: center;
+}
+
+.image-view {
+  width: 15%;
+  height: 75%;
+}
+
+.image {
+  width: 72rpx;
+  height: 72rpx;
+}
+
+.content {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 24rpx;
+  justify-content: space-around;
+}
+
+.name {
+  font-weight: bolder;
+  color: #21242a;
+}
+
+.time {
+  color: #999;
+}
+
+.con {
+  color: #999;
+  font-size: 26rpx;
+}
+
+.line {
+  width: 100%;
+  height: 1rpx;
+  background: #a6a6a6;
+}

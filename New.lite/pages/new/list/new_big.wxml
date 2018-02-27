@@ -1,0 +1,29 @@
+<template name="new_big">
+  <swiper vertical="true" class="swiper" style="height:555px" bindchange="current">
+    <block wx:for="{{is_headlines}}" wx:key="key">
+      <swiper-item>
+        <view class="sw_item_big1">
+          <view class="view_11"></view>
+          <image class="sw_item_big-image" src="{{item.logo}}" mode="aspectFill"></image>
+          <image class="like" src="/images/Mask.png" id="{{item.id}}" bindtap="onclick"></image>
+          <view class="view00"></view>
+          <view class="information">
+            <view class="sub_name">
+              <view class="like_view">
+                <image class="like_image" src="/images/icon_like_white.png"></image>
+                <view class="classname">{{item.dz}}</view>
+              </view>
+              <view class="read_view">
+                <image class="read_image" src="/images/icon_read.png"></image>
+                <view class="classname">{{item.read_count}}</view>
+              </view>
+            </view>
+            <view class="sw_item_title" id="{{item.id}}" bindtap="onclick">{{item.title}}</view>
+            <text class="year-time" id="{{item.id}}" bindtap="onclick">{{item.date}}</text>
+
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</template>

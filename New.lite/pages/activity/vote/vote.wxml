@@ -1,0 +1,53 @@
+<!--pages/topic/vote/vote.wxml-->
+<!-- 抽奖蒙版 -->
+<web-view wx:if="{{url!=null}}" src="{{url}}"></web-view>
+<block wx:if="{{url==null}}">
+  <view class="line0"></view>
+  <block wx:if="{{activity_v}}">
+    <view class='opacity'></view>
+    <view class='activity_main'>
+      <image class='pop_ups' bindtap='activity' src="/images/activity.png"></image>
+      <image class='pop_close' bindtap='close_activity' src="/images/icon_close.png"></image>
+    </view>
+  </block>
+  <view class='page2'>
+    <image class='head' src="{{summarize.logo}}"></image>
+    <view class="view_title" style='color:{{textcolor}}'>{{summarize.title}}</view>
+  </view>
+  <view class='page1' style=' background: linear-gradient( #{{bgcolor[0]}}, #{{bgcolor[1]}})'>
+    <view class="classname" style='color:{{textcolor}}'>{{summarize.description}}
+      <view class="symbol" style='color:{{textcolor}}'>“</view>
+      <view class="symbol1" style='color:{{textcolor}}'>”</view>
+    </view>
+    <view class="bt_read" bindtap='bt_article' style='color:{{textcolor}}'>点击阅读更多
+      <view class='dividing_line' style='background:{{textcolor}}'></view>
+    </view>
+    <view class="progress">
+      <checkbox-group bindchange="checkboxChange">
+        <blcke wx:for="{{summarize.option_list}}">
+          <view class="series" style=' box-shadow: 0 0 50rpx rgba({{shadowcolor}});'>
+            <view class='title'>
+              <image class="avatar" src="{{item.icon}}"></image>
+              <view class='view_r' style='color:{{textcolor}}'>
+                <view class="namge">{{item.title}}</view>
+                <view class='content'>{{item.description}}</view>
+                <progress backgroundColor="#EE9F22" stroke-width="6" activeColor="#3C2D13" percent="{{item.percentage*a}}" />
+              </view>
+              <view class='bt_vote'>
+                <view class='view1' style='font-size:{{item.font_size}}rpx'>{{item.ticket_num}}</view>
+
+                <checkbox wx:if="{{groups==1}}" disabled="{{va[item.id]}}" value="{{item.id}}" checked="{{item.checked}}" />
+                <view wx:if="{{groups!=1}}" bindtap='bt_vote' data-index='{{index}}' data-id='{{item.id}}' class='view2' style=' background:#FF473F'>投票</view>
+              </view>
+            </view>
+          </view>
+        </blcke>
+      </checkbox-group>
+    </view>
+    <view wx:if="{{groups==1}}" bindtap='bt_checkbox_vote' class='checkbox_vote'>确认提交</view>
+    <image class='bottom' src='{{summarize.logo1}}'> </image>
+
+  </view>
+</block>
+
+<!-- <image class='head' src="{{summarize.logo}}"> -->

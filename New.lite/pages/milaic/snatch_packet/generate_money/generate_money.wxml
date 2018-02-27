@@ -1,0 +1,30 @@
+<!--pages/milaic/snatch_packet/generate_money/generate_money.wxml-->
+<!--pages/milaic/snatch_packet/pay_money/pay_money.wxml-->
+<view wx:if='{{prompt[0]}}' class='prompt'>{{prompt[1]}}</view>
+<image class='avatar' src='{{avatar}}'></image>
+<view class='bg'>
+  <view class='conter1'>
+    <view class='heading'>设置口令</view>
+    <view class='input' bindtap='password_list'>{{password}}</view>
+    <image bindtap='password_list' class='bt_image' src='/images/icon_Triangle.png'> </image>
+  </view>
+  <view class='point'>
+    <view class='point_text'>清晰说对口令就能获得随机的红包</view>
+    <image class='point_image' src='/images/icon-explain.png'></image>
+  </view>
+  <view class='conter1' style='margin-top: 26rpx;'>
+    <view class='heading'>总金额(元)</view>
+    <input class='input' type="digit" bindinput='money' placeholder-class='input_placeholder' placeholder="输入红包金额"></input>
+  </view>
+  <view class='conter1'>
+    <view class='heading'>红包数量</view>
+    <input class='input' type="number" bindinput='number1' placeholder-class='input_placeholder' placeholder="填写个数"></input>
+  </view>
+  <view class='remark'>需支付￥{{serviceFee}}服务费，优先使用余额￥0.00</view>
+  <view class='bt' bindtap='bt'>{{charge}}</view>
+</view>
+<view class='income' bindtap='income'>去提现</view>
+<view class='i_t_type' bindtap='cash_bt'>
+  <image class='i_t_type_image' src='/images/Shape.png'></image>
+  <view>红包记录</view>
+</view>

@@ -1,0 +1,189 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": false,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.91",
+	"appid": "wxa9f5672aa584035c",
+	"projectname": "%E5%8F%91%E7%8E%B0%E6%96%B0%E7%89%88%E6%9C%AC",
+	"svr": "",
+	"client": "",
+	"qcloudRoot": "",
+	"miniprogramRoot": "",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 20,
+			"list": [
+				{
+					"id": 0,
+					"name": "无限二维码期号",
+					"pathName": "pages/new/list/new",
+					"query": "scene=from/*201963/*preview/*1",
+					"scene": "1047"
+				},
+				{
+					"id": 1,
+					"name": "有限二维码期号",
+					"pathName": "pages/new/list/new",
+					"query": "from=201750&preview=1",
+					"scene": "1047"
+				},
+				{
+					"id": 2,
+					"name": "文章内容",
+					"pathName": "pages/new/list/new",
+					"query": "scene=id/*1829/*preview=1",
+					"scene": "1047"
+				},
+				{
+					"id": 3,
+					"name": "专题",
+					"pathName": "pages/topic/activity1/activity_list1",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "有限二维码期号",
+					"pathName": "pages/new/list/new",
+					"query": "from=201921",
+					"scene": "1047"
+				},
+				{
+					"id": 5,
+					"name": "投票分享",
+					"pathName": "pages/topic/vote/vote",
+					"query": "id=7",
+					"scene": "1036",
+					"referrerInfo": {}
+				},
+				{
+					"id": 6,
+					"name": "无限二维码期号",
+					"pathName": "pages/new/list/new",
+					"query": "from=301008",
+					"scene": "1047"
+				},
+				{
+					"id": 7,
+					"name": "有限，发钱",
+					"pathName": "pages/new/list/new",
+					"query": "from=20170808&activityID=2",
+					"scene": "1047"
+				},
+				{
+					"id": 8,
+					"name": "文章内容",
+					"pathName": "pages/new/news/article",
+					"query": "id=1561&preview=1",
+					"scene": "1047"
+				},
+				{
+					"id": 9,
+					"name": "广告",
+					"pathName": "pages/new/list/new",
+					"query": "preview=1&ad_id=8",
+					"scene": "1047"
+				},
+				{
+					"id": 10,
+					"name": "列表参页面",
+					"pathName": "pages/topic/activity1/activity_list1",
+					"query": "",
+					"scene": "1047"
+				},
+				{
+					"id": 11,
+					"name": "团委投票",
+					"pathName": "pages/topic/vote/vote",
+					"query": "id=16&groups =http://a.milaipay.com/Public/Image/11.png"
+				},
+				{
+					"id": -1,
+					"name": "红包",
+					"pathName": "pages/new/Luckybag/Luckybag",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我想被发现",
+					"pathName": "pages/milaic/join/join",
+					"query": "",
+					"scene": "1047"
+				},
+				{
+					"id": 14,
+					"name": "广告",
+					"pathName": "pages/new/list/new",
+					"query": "from=201973&preview=1&ad_id=7",
+					"scene": "1047"
+				},
+				{
+					"id": 15,
+					"name": "新版本发现首页",
+					"pathName": "pages/new/scroll_list/list",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": 16,
+					"name": "活动",
+					"pathName": "pages/activity/carousel/carousel",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": 17,
+					"name": "发红包",
+					"pathName": "pages/milaic/snatch_packet/generate_money/generate_money",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": 18,
+					"name": "口令列表",
+					"pathName": "pages/milaic/snatch_packet/password_list/password_list",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": 19,
+					"name": "分享",
+					"pathName": "pages/milaic/snatch_packet/partake/partake",
+					"query": "packet_id=18&password_text=测试",
+					"scene": "1001"
+				},
+				{
+					"id": 20,
+					"name": "抢红包",
+					"pathName": "pages/milaic/snatch_packet/pay_money/pay_money",
+					"query": "scene=86",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "历史记录",
+					"pathName": "pages/milaic/snatch_packet/historical_records/historical_records",
+					"query": "",
+					"scene": "1001"
+				}
+			]
+		}
+	}
+}

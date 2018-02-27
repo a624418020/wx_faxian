@@ -1,0 +1,135 @@
+/* pages/milaic/snatch_packet/generate_money/generate_money.wxss */
+
+page {
+  background: rgb(241, 241, 241);
+}
+
+.avatar {
+  position: absolute;
+  left: 310rpx;
+  top: 40rpx;
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  border: 6rpx solid white;
+}
+
+.bg {
+  display: flex;
+  width: 688rpx;
+  height: 694rpx;
+  background: white;
+  margin-left: 31rpx;
+  margin-top: 110rpx;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60rpx;
+  box-shadow: #d8d8d8 2px 2px 10px;
+}
+
+.prompt {
+  position: absolute;
+  width: 568rpx;
+  background: rgb(216, 89, 64);
+  text-align: center;
+  left: 91rpx;
+  top: 185rpx;
+  height: 40rpx;
+  color: white;
+  font-size: 30rpx;
+}
+
+.conter1 {
+  position: relative;
+  width: 568rpx;
+  display: flex;
+  margin-top: 60rpx;
+  justify-content: space-between;
+}
+
+.point {
+  height: 80rpx;
+  width: 568rpx;
+  align-items: center;
+  display: flex;
+}
+
+.point_text {
+  font-size: 26rpx;
+  color: rgb(139, 139, 139);
+}
+
+.point_image {
+  width: 28rpx;
+  height: 28rpx;
+  margin-left: 16rpx;
+}
+
+.heading {
+  font-size: 32rpx;
+  color: rgb(48, 48, 48);
+}
+
+.input {
+  width: 392rpx;
+  border-bottom: 2rpx solid rgb(217, 217, 217);
+  font-size: 32rpx;
+  color: rgb(48, 48, 48);
+}
+
+.input_placeholder {
+  font-size: 32rpx;
+  color: rgb(210, 210, 210);
+}
+
+.remark {
+  margin-top: 80rpx;
+  font-size: 26rpx;
+  color: rgb(139, 139, 139);
+}
+
+.bt {
+  margin-top: 60rpx;
+  width: 562rpx;
+  height: 88rpx;
+  color: white;
+  font-size: 32rpx;
+  line-height: 88rpx;
+  text-align: center;
+  border-radius: 88rpx;
+  background: rgb(216, 89, 64);
+}
+
+.bt_image {
+  position: absolute;
+  height: 18rpx;
+  width: 30rpx;
+  top: 6rpx;
+  right: 20rpx;
+}
+
+.income {
+  margin-top: 48rpx;
+  width: 100%;
+  text-align: center;
+  font-size: 26rpx;
+  color: rgb(89, 93, 139);
+}
+
+.i_t_type {
+  position: absolute;
+  left: 0;
+  bottom: 30rpx;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: rgb(89, 93, 139);
+  font-size: 28rpx;
+}
+
+.i_t_type_image {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 16rpx;
+}

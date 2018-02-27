@@ -1,0 +1,22 @@
+
+<!--pages/milaic/notice/notice.wxml-->
+<view class="head"></view>
+<view class="head1"></view>
+<block wx:for="{{list}}" wx:key="{{item.id}}">
+  <view class="parent">
+    <view class="image-view">
+      <block wx:if="{{item.type==1}}">
+        <image class="image" src="/images/icon_notice.png"></image>
+      </block>
+      <block wx:else>
+        <image class="image" src="/images/icon_official.png"></image>
+      </block>
+    </view>
+    <view class="content">
+      <view class="title">{{item.title}}</view>
+      <view class="time">{{item.time}}</view>
+      <view class="con">{{item.content}}</view>
+      <view class="line"></view>
+    </view>
+  </view>
+</block>

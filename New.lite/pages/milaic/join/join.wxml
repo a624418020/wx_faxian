@@ -1,0 +1,67 @@
+<!--pages/milaic/join/join.wxml-->
+
+<!-- 不予通过 -->
+<block wx:if="{{visible&&form.status==2}}">
+  <view class='translucent'></view>
+  <view class="taost">
+    <view style="display: flex;">
+      <view class='taost_button'bindtap='button_quit' style='width:200rpx'>返回</view>
+      <view class='taost_button' bindtap='button_modify' style='width:200rpx;margin-left: 58rpx;'>我要修改</view>
+    </view>
+    <view class='taost_text'>很抱歉，您的申请暂未通过，请继续加油</view>
+  </view>
+  <image class="taost_image" src='/images/pic_ing.png'></image>
+</block>
+<!-- 审核中 -->
+<block wx:if="{{visible&&form.status==0}}">
+  <view class='translucent'></view>
+  <view class="taost">
+    <view style="display: flex;">
+      <view class='taost_button' bindtap='button_quit'  style='width:200rpx'>返回</view>
+      <view class='taost_button' bindtap='button_modify' style='width:200rpx;margin-left: 58rpx;'>我要修改</view>
+    </view>
+    <view class='taost_text'>我们正在审核您所提交的资料，请稍作等待</view>
+  </view>
+  <image class="taost_image" src='/images/pic_ing.png'></image>
+</block>
+<!-- 审核通过 -->
+
+<block wx:if="{{visible&&form.status==1}}">
+  <view class='translucent'></view>
+  <view class="taost">
+    <view class='taost_button' bindtap='button_quit'>好的</view>
+    <view class='taost_text1'>您已通过发现家资格审核，我们的工作人员将会联系您接下来的相关事宜， 欢迎踏上我们的发现之旅
+    </view>
+  </view>
+  <image class="taost_image" src='/images/pic_pass.png'></image>
+</block>
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="line0"></view>
+  <view class="hend">“填写信息，让我们了解你”</view>
+  <view class="view">
+    <view class="name">姓名</view>
+    <input class="input" name="name" placeholder-style="text-align:right" placeholder-class="placeholder" placeholder="请填写" value="{{form.name}}" />
+  </view>
+  <view class="line"></view>
+  <view class="view">
+    <view class="name">手机</view>
+    <input class="input" name="tel" placeholder-style="text-align:right" placeholder-class="placeholder" placeholder="请填写" value="{{form.tel}}" />
+  </view>
+  <view class="line"></view>
+  <view class="view">
+    <view class="name">居住地</view>
+    <input class="input" name="address" value="{{form.address}}" placeholder-style="text-align:right" placeholder-class="placeholder" placeholder="请填写" />
+  </view>
+  <view class="line"></view>
+  <view class="view">
+    <view class="name">个人简介</view>
+    <input class="input" disabled="true" placeholder-style="text-align:right" placeholder-class="placeholder" />
+  </view>
+  <view wx:if="{{!visible}}" class="viewtextarea">
+    <textarea name="summary" class="textarea" maxlength="800" value="{{form.summary}}" cursor-spacing="20" placeholder-class="textarea_placeholder" placeholder="{{txt1}}" />
+  </view>
+    <view wx:if="{{visible}}" class="viewtextarea">
+    <text name="summary" class="textarea" maxlength="800"  placeholder-class="textarea_placeholder" placeholder="{{txt1}}" >{{form.summary}}</text> 
+  </view>
+  <button formType="submit" class="button">提交申请</button>
+</form>

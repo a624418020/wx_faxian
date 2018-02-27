@@ -1,0 +1,51 @@
+<!--pages/milaic/mine/mine.wxml-->
+
+<view class="user">
+  <image class="avatar" bindtap="setavatarUrl" src="{{avatarUrl}}"></image>
+  <view class="name">{{nickName}}</view>
+  <view class="line"></view>
+  <view class="view_01">
+    <view bindtap="button" id="join" class="bt_participate">
+      <image class="image_01" src="/images/icon_foundest.png"></image>
+      <view class="participate">成为发现家</view>
+    </view>
+    <view bindtap="button" id="wantjoin" class="bt_participate">
+      <image class="image_01" src="/images/icon_founded.png"></image>
+      <view class="participate">我想被发现</view>
+    </view>
+  </view>
+</view>
+<view class="line2"> 发现</view>
+
+<view class="list" bindtap="button" id="collection">
+  <view class="view_02">
+    <image class="image_03" src="/images/icon_myfavorate.png"></image>
+    <view class="notice">我的收藏</view>
+  </view>
+  <image class="image_02" src="/images/btn_next.png"></image>
+</view>
+<view class="line1"></view>
+<view class="list" bindtap="button" id="network">
+  <view class="view_02">
+    <image class="image_03" src="/images/icon_broadcast.png"></image>
+    <view class="notice">小广播</view>
+  </view>
+  <image class="image_02" src="/images/btn_next.png"></image>
+</view>
+<view class="line1"></view>
+<view class="list" bindtap="button" id="return">
+  <view class="view_02">
+    <image class="image_03" src="/images/icon_backhome.png"></image>
+    <view class="notice">回到首页</view>
+  </view>
+  <image class="image_02" src="/images/btn_next.png"></image>
+</view>
+<view class="line1"></view>
+<view class="list" bindtap="button" id="opinion">
+  <view class="view_02">
+    <image class="image_03" src="/images/icon_feedback.png"></image>
+    <view class="notice">意见反馈</view>
+  </view>
+  <image class="image_02" src="/images/btn_next.png"></image>
+</view>
+<view class="line1"></view>

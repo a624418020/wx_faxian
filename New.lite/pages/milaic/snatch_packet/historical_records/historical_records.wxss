@@ -1,0 +1,139 @@
+/* pages/milaic/snatch_packet/historical_records/historical_records.wxss */
+
+page {
+  background: rgb(242, 241, 241);
+}
+
+.headlines_view {
+  width: 100%;
+  height: 96rpx;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.issue {
+  /* color: rgb(216, 89, 64); */
+  height: 80rpx;
+  line-height: 80rpx;
+  color: rgb(139, 139, 139);
+  font-size: 32rpx;
+}
+
+.receive {
+  height: 80rpx;
+  line-height: 80rpx;
+  color: rgb(139, 139, 139);
+  font-size: 32rpx;
+}
+
+.head_logo {
+  margin-top: 40rpx;
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+  margin-left: 315rpx;
+}
+
+.name {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 28rpx;
+  margin-top: 30rpx;
+}
+
+.name_1 {
+  color: rgb(89, 93, 139);
+}
+
+.name_2 {
+  color: rgb(48, 48, 48);
+  margin-left: 12rpx;
+}
+
+.prompt_title {
+  margin-top: 64rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.prompt_title_view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 66rpx;
+}
+
+.prompt_title_text1 {
+  color: rgb(139, 139, 139);
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.prompt_title_text2 {
+  color: rgb(48, 48, 48);
+  margin-top: 10rpx;
+  font-size: 48rpx;
+  text-align: center;
+  font-weight: 700;
+}
+
+.prompt {
+  display: flex;
+  justify-content: space-around;
+}
+
+.records_list {
+  width: 100%;
+  height: 106rpx;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+.records_list_logo {
+  height: 76rpx;
+  width: 76rpx;
+  border: 1px solid rgb(216, 216, 216);
+  margin-left: 32rpx;
+}
+
+.records_list_name {
+  font-size: 28rpx;
+  color: rgb(7, 3, 53);
+}
+
+.records_list_time {
+  font-size: 24rpx;
+  color: rgb(104, 104, 104);
+}
+
+.records_list_view {
+  flex-grow: 1;
+  margin-left: 32rpx;
+}
+
+.records_list_money {
+  font-size: 28rpx;
+  color: rgb(7, 3, 53);
+  font-weight: 700;
+  margin-right: 32rpx;
+}
+
+.records_list_number {
+  font-size: 24rpx;
+  color: rgb(140, 140, 140);
+  margin-right: 32rpx;
+  text-align: right;
+}
+
+.segmenting_line {
+  margin-left: 32rpx;
+  margin-right: 32rpx;
+  flex-grow:1;
+  height: 1px;
+  background: rgb(223, 223, 232);
+}
+

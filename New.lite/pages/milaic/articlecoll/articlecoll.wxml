@@ -1,0 +1,18 @@
+<!--pages/milaic/articlecoll/articlecoll.wxml-->
+
+<view class="line0"></view>
+<text class="text">您尚未有收藏任何文章</text>
+<black wx:for="{{list}}" wx:key="{{item.id}}">
+  <view class="view0000">
+    <view class="list" bindtap="list" id="{{item.id}}">
+      <image class="image" mode="aspectFill" src="http://{{item.logo}}"></image>
+      <view class="rightview">
+        <view class="title">{{item.title}}</view>
+        <view class="timeview">
+          <view class="time">{{item.date}}</view>
+        </view>
+      </view>
+    </view>
+    <view bindtap="del"id="{{item.id}}"data-name="{{index}}" class="del">取消收藏</view>
+  </view>
+</black>

@@ -1,0 +1,33 @@
+<!--pages/activity/carousel/carousel.wxml-->
+<!-- <view style="white-space: nowrap; opacity:{{hidden1}};" class="box" bindtouchstart="touchstart" bindtouchend="touchend"   >
+  <view class="club" animation="{{animationData1}}">
+    <image class='club_image' src="{{image[1]}}" />
+  </view>
+  <view class="club"  animation="{{animationData2}}">
+    <image class='club_image' src="{{image[2]}}" />
+  </view>
+  <view class="club" animation="{{animationData3}}">
+    <image class='club_image' src="{{image[3]}}" />
+  </view>
+</view> -->
+
+ <!-- <view class="main" bindtouchstart="touchstart" bindtouchend="touchend" style='opacity:{{hidden}};' animation="{{animationData}}">
+  <image class='main_image' src="{{main_image[2]}}" />
+</view>  -->
+<view style="white-space: nowrap; opacity:{{hidden1}};" class="box" bindtouchstart="touchstart" bindtouchend="touchend"   >
+  <view class="club" animation="{{animationData0}}">
+    <image class='club_image' src="{{image[0]}}" />
+  </view>
+  <view class="club"  animation="{{animationData1}}">
+    <image class='club_image' src="{{image[1]}}" />
+  </view>
+  <view class="club" animation="{{animationData2}}">
+    <image class='club_image' src="{{image[2]}}" />
+  </view>
+    <view class="club" animation="{{animationData3}}">
+    <image class='club_image' src="{{image[3]}}" />
+  </view>
+    <view class="club" animation="{{animationData4}}">
+    <image class='club_image' src="{{image[4]}}" />
+  </view>
+</view>

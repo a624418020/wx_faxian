@@ -1,0 +1,97 @@
+/* pages/new/share/share.wxss */
+
+.share {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 90%;
+  width: 100%;
+  z-index: 10;
+}
+
+.button {
+  background: white;
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  height: 34rpx;
+  width: 34rpx;
+  margin-right: 5rpx;
+}
+
+.text {
+  font-size: 28rpx;
+}
+
+.pop_b {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background: #5c5c5c;
+  opacity: 0.6;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop_a {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop {
+  width: 614rpx;
+  height: 726rpx;
+  background: white;
+  border-radius: 6rpx;
+}
+
+.pop_image {
+  margin: 2%;
+  width: 96%;
+  height: 50%;
+}
+
+.pop_text {
+  display: flex;
+  height: 46%;
+  flex-direction: column;
+   justify-content:space-around;
+  text-align:center;
+  align-items: center;
+}
+.text1{
+  font-size: 36rpx;
+}
+.text2{
+  line-height:1.8;
+  font-size: 24rpx;
+}
+
+.ok{
+  align-self:flex-end;
+  line-height: 60rpx;
+  border-top:1px solid #EBEBEB;
+  height: 60rpx;
+  width: 100%;
+  font-size: 28rpx;
+}

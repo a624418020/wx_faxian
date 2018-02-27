@@ -1,0 +1,13 @@
+<!--pages/topic/activity1/activity_list1.wxml-->
+<block wx:for="{{list}}">
+<view class="logo_image1" style='background-image: url({{index}});' ></view>
+<swiper class="scroll-view" scroll-x indicator-dots >
+ <block wx:for="{{item}}">
+  <swiper-item bindtap='bt_topic'  data-id='{{item.id}}'  data-index='{{item.groups}}'>
+    <image src='{{item.logo}}'  class="bc_green" ></image>
+    <view class='content'>{{item.desc}}</view>
+  </swiper-item>
+ </block>
+</swiper>
+<view class='line_16'></view>
+</block>

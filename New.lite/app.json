@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/new/list/new",
+    "pages/new/scroll_list/list",
+    "pages/new/news/article",
+    "pages/new/Luckybag/Luckybag",
+    "pages/new/share/share",
+    "pages/new/search/search",
+    "pages/milaic/mine/mine",
+    "pages/milaic/snatch_packet/generate_money/generate_money",
+    "pages/milaic/snatch_packet/collectmoney/collectmoney",
+    "pages/milaic/snatch_packet/pay_money/pay_money",
+    "pages/milaic/snatch_packet/historical_records/historical_records",
+    "pages/milaic/snatch_packet/partake/partake",
+    "pages/milaic/snatch_packet/password_list/password_list",
+    "pages/milaic/join/join",
+    "pages/milaic/articlecoll/articlecoll",
+    "pages/milaic/opinion/opinion",
+    "pages/milaic/wantjoin/wantjoin",
+    "pages/milaic/notice/notice",
+    "pages/topic/list/list",
+    "pages/topic/sort/sort",
+    "pages/activity/activity/activity_list",
+    "pages/activity/carousel/carousel",
+    "pages/activity/vote/vote"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "networkTimeout": {
+    "request": "10000"
+  },
+  "tabBar": {
+    "color": "#a6a6a6",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/new/list/new",
+        "iconPath": "images/icon_search_pre.png",
+        "selectedIconPath": "images/icon_search.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/milaic/mine/mine",
+        "iconPath": "images/icon_mine_pre.png",
+        "selectedIconPath": "images/icon_mine.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

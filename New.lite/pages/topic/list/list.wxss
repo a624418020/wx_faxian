@@ -1,0 +1,111 @@
+/* pages/topic/list/list.wxss */
+
+.list {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 412rpx;
+  margin-bottom: 20rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  background: #21242a;
+}
+
+.frame {
+  width: 546rpx;
+  height: 296rpx;
+  z-index: 10;
+}
+
+.title {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center; /*水平居中*/
+  line-height: 412rpx; /*行距设为与div高度一致*/
+  color: white;
+  font-size: 40rpx;
+  z-index: 100;
+}
+
+.description {
+  width: 670rpx;
+  font-size: 24rpx;
+  color: #21242a;
+  margin-left: 40rpx;
+  line-height: 48rpx;
+  margin-bottom: 40rpx;
+  text-indent:48rpx
+}
+
+.body {
+  width: 670rpx;
+  margin-left: 40rpx;
+  margin-bottom: 38rpx;
+  border-radius: 10rpx;
+  box-shadow: 5rpx 5rpx 20rpx 5rpx #d8d8d8;
+}
+
+.body_image {
+  width: 670rpx;
+  height: 430rpx;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
+
+.body_title {
+  margin-top: 20rpx;
+  margin-bottom: 00rpx;
+  font-size: 36rpx;
+  color: #21242a;
+  margin-left: 28rpx;
+}
+
+.body_bar {
+  width: 614rpx;
+  margin-left: 28rpx;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  color: #c0c0c0;
+  font-size: 24rpx;
+  height: 80rpx;
+}
+
+.read {
+  height: 32rpx;
+  line-height: 32rpx;
+  display: flex;
+  margin-left: 60rpx;
+}
+
+.approve_image {
+  margin-top: 3rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.body_time {
+  flex-grow: 1;
+}

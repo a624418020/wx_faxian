@@ -1,0 +1,115 @@
+/**index.wxss**/
+
+page {
+  background-color: #f7f7f7;
+}
+
+.head {
+  height: 448rpx;
+  background-color:#f7f7f7; 
+  margin-bottom: 12rpx;
+}
+
+.head-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.head-text {
+  position: absolute;
+  margin-left: 38rpx;
+  margin-right: 38rpx;
+  bottom: 40rpx;
+  left: 0;
+  font-size: 40rpx;
+
+  color: white;
+}
+
+.shadow {
+  position: absolute;
+  width: 750rpx;
+  height: 150rpx;
+  bottom: 0;
+  left: 0;
+}
+
+.bug-image {
+  margin-bottom: 12rpx;
+  background-color: white;
+}
+
+.image-2 {
+  width: 100%;
+  height: 402rpx;
+}
+
+.introduction {
+  padding-left: 5%;
+  padding-right: 20rpx;
+  font-size: 26rpx;
+  color: #a6a6a6;
+}
+
+.title {
+  padding-bottom: 40rpx;
+  padding-top: 32rpx;
+  padding-left: 38rpx;
+  padding-right: 38rpx;
+  color: #21242a;
+  font-size: 32rpx;
+}
+
+.information {
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  color: #a6a6a6;
+}
+
+.small-image {
+  position: relative;
+  margin-bottom: 12rpx;
+  background-color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction:row;
+}
+
+.words {
+  padding-left: 38rpx;
+   padding-right: 30rpx;
+  padding-bottom: 34rpx;
+  padding-top: 34rpx;
+  position: relative;
+  width: 412rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.title-data {
+  color: #21242a;
+  font-size: 32rpx;
+}
+
+.time {
+  color: #999;
+  font-size: 24rpx;
+}
+
+.view-image {
+  display: flex;
+  width: 338rpx;
+  height: 244rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 90%;
+  height: 90%;
+}

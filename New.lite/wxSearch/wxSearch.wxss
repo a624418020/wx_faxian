@@ -1,0 +1,150 @@
+.wxSearch {
+
+  top: 43px;
+  left: 0;
+  width: 100%;
+  height: 1100rpx;
+  background-color: #fff;
+}
+
+.wxSearchInner {
+  background-color: #fff;
+  padding-top: 45rpx;
+}
+
+.wxSearch-section {
+  background-color: #fff;
+  padding: 5px 0px 5rpx 0px;
+}
+
+.wxSearch-pancel {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #eee;
+}
+
+.wxSearch-input {
+  background-color: #f7f7f7;
+  padding-left: 15px;
+  width: 502rpx;
+}
+
+.wxSearch-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56rpx;
+  padding-right: 26rpx;
+  width: 110rpx;
+  margin-bottom: 16rpx;
+  border: none !important;
+  background-color: white;
+  color: #21242a;
+  font-size: 32rpx;
+}
+
+.wxSearchHistory {
+  padding-top: 40rpx;
+}
+
+.wxSearchHistoryItem_image {
+  margin-right: 30rpx;
+  height: 32rpx;
+  width: 32rpx;
+}
+
+.wxSearchTitle {
+  color: #999;
+  padding-left: 24rpx;
+  font-size: 24rpx;
+  padding-bottom: 6rpx;
+}
+
+.wxSearchHistoryList {
+  margin-left: 24rpx;
+  margin-right: 24rpx;
+}
+
+.wxSearchMindKeyItem {
+  padding: 10px 5px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  font-size: 14px;
+  color: cornflowerblue;
+}
+
+.wxSearchKeyList {
+  margin-top: 24rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.wxSearchKeyItem {
+  display: flex;
+  width: 130rpx;
+  height: 54rpx;
+  font-size: 26rpx;
+  margin-top: 10rpx;
+  color: #21242a;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dddddd;
+  border-radius: 27rpx;
+}
+
+.wxSearchHistoryItem {
+  padding-top: 22rpx;
+  padding-bottom: 26rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.wxSearchHistoryItemText {
+  flex: 8;
+  font-size: 14px;
+}
+
+.wxSearchHistoryItemDel {
+  width: 32rpx;
+  height: 32rpx;
+  text-align: center;
+}
+
+.qingchu_image {
+  width: 26rpx;
+  height: 28rpx;
+}
+
+.wxSearchHistoryEmpty {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  font-size: 12px;
+}
+
+.class_qinchu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 24rpx;
+}
+
+.qingchu_butten {
+  padding-left: 40rpx;
+}
+
+.wxSearchDeleteAllBtn {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 12px;
+}
+.ad_image{
+  width: 96%;
+  height: 100rpx;
+  margin-bottom: 20rpx;
+  margin-left: 2%;
+}

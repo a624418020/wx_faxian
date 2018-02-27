@@ -1,0 +1,134 @@
+<!-- 客服 -->
+  <button class='contact' plain='{{true}}'  open-type="contact">
+  <image class='contact_i' src='/images/pic_redbag.png'></image>
+</button>  
+<!-- 广告弹窗 -->
+<black wx:if="{{ad_or}}">
+  <view class='ad_m' bindtap="onclick_ad"></view>
+  <image class="ad_image" mode="aspectFill" bindtap="onclick_ad_t" src="{{ad_data_b.imglist}}"></image>
+  <image class="ad_image_f" bindtap="onclick_ad" src="/images/false.png"></image>
+</black>
+<!-- 搜索点击放大按钮 -->
+<view class="logo_bt" bindtap="search"></view>
+
+<view class="logo" bindtap="search" animation="{{animationData}}">
+  <image class="search" src="/images/icon_search(1).png"></image>
+  <view wx:if="{{logo}}" class="logo_name">{{ad_data_t.string1}}</view>
+  <image wx:if="{{logo}}" bindload="imageLoad" style="width:{{imageWidth}}rpx;height:34rpx;" class="logo_image" src="{{ad_data_t.imglist}}"></image>
+</view>
+<swiper vertical="true" wx:if="{{carousel==1}}" style="height:100vh" class="swiper" bindchange="current">
+  <block wx:for="{{is_headlines}}" wx:key="key">
+    <swiper-item id="{{item.headlines[0].id}}" data-index="{{index}}" bindtap="onclick">
+      <view class="sw_item_big">
+        <view class="view_11"></view>
+        <image class="sw_item_big-image" lazy-load="ture" src="{{item.headlines[0].logo}}" mode="aspectFill"></image>
+        <image class="like" src="/images/Mask.png"></image>
+        <view class="information" id="{{item.headlines[0].id}}" data-index="{{index}}" bindtap="onclick">
+          <view class="sub_name">
+            <view class="read_view">
+              <image class="read_image" src="/images/icon_read.png"></image>
+               <view wx:if='{{item.headlines[0].read_count>99999}}' class="classname">100000+</view>
+              <view wx:else class="classname">{{item.headlines[0].read_count}}</view>
+            </view>
+            <view class="like_view">
+              <image class="like_image" src="/images/icon_praise_white.png"></image>
+              <view class="classname">{{item.headlines[0].dz}}</view>
+            </view>
+          </view>
+          <view class="sw_item_title">{{item.headlines[0].title}}</view>
+          <text class="year-time">{{item.headlines[0].date}}</text>
+
+        </view>
+      </view>
+      <view class="sw_sw_y">
+        <scroll-view class="scroll-view" scroll-x="true">
+          <block wx:for="{{item.article}}" wx:key="lz">
+            <view class="item_y">
+              <image class="item_y_image" lazy-load="ture" src="{{item.logo}}" mode="aspectFill"></image>
+              <view class="item_view"></view>
+              <view class="item_title" id="{{item.id}}" bindtap="onclick">
+                <view class="view_title">{{item.title}}</view>
+              </view>
+            </view>
+          </block>
+        </scroll-view>
+      </view>
+    </swiper-item>
+  </block>
+  <block wx:if="{{item.headlines[0].number!=headid&&is_zt}}" wx:for="{{objectArray}}" wx:key="aaa">
+    <swiper-item id="{{item.headlines[0].id}}" data-index="{{index}}" bindtap="onclick">
+      <view class="sw_item_big">
+        <image class="sw_item_big-image" lazy-load="ture" src="{{item.headlines[0].logo}}" mode="aspectFill"></image>
+        <image class="like" src="/images/Mask.png"></image>
+        <view class="information" id="{{item.headlines[0].id}}" data-index="{{index}}" bindtap="onclick">
+          <view class="sub_name">
+            <view class="read_view">
+              <image class="read_image" src="/images/icon_read.png"></image>
+              <view wx:if='{{item.headlines[0].read_count>99999}}' class="classname">100000+</view>
+              <view wx:else class="classname">{{item.headlines[0].read_count}}</view>
+            </view>
+            <view class="like_view">
+              <image class="like_image" src="/images/icon_praise_white.png">{{sx}}</image>
+              <view class="classname">{{item.headlines[0].dz}}</view>
+            </view>
+          </view>
+          <view class="sw_item_title">{{item.headlines[0].title}}</view>
+          <text class="year-time">{{item.headlines[0].date}}</text>
+          <view class="number">
+
+          </view>
+        </view>
+      </view>
+      <view class="sw_sw_y">
+        <scroll-view class="scroll-view" scroll-x="true">
+          <block wx:for="{{item.article}}" wx:key="lz">
+            <view class="item_y">
+              <image class="item_y_image" lazy-load="ture" src="{{item.logo}}" mode="aspectFill"></image>
+              <view class="item_view"></view>
+              <view class="item_title" id="{{item.id}}" bindtap="onclick">
+                <view class="view_title">{{item.title}}</view>
+              </view>
+            </view>
+          </block>
+        </scroll-view>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 下面是期号为3开头的-->
+<import src="/pages/new/list/new_one.wxml" />
+<template wx:if="{{carousel==3}}" is="new_one" data="{{is_headlines}}" />
+<!-- 下面是期号为5开头的-->
+<!-- <import src="/pages/new/list/new_big.wxml" />
+<template wx:if="{{carousel==5}}" is="new_big" data="{{is_headlines}}" /> -->
+
+<block wx:if="{{carousel==5}}">
+  <swiper vertical="true" style="height:100vh" class="swiper" bindchange="current">
+    <block wx:for="{{is_headlines}}" wx:key="key">
+      <swiper-item bindtap="onclick" id="{{item.id}}">
+        <view class="sw_item_big1">
+          <view class="view_11"></view>
+          <image class="sw_item_big-image" lazy-load="ture" src="{{item.logo}}" mode="aspectFill"></image>
+          <image class="like" src="/images/Mask.png"></image>
+          <view class="view00"></view>
+          <view class="information">
+            <view class="sub_name">
+
+              <view class="read_view">
+                <image class="read_image" src="/images/icon_read.png"></image>
+                <view class="classname">{{item.read_count}}</view>
+              </view>
+              <view class="like_view">
+                <image class="like_image" src="/images/icon_praise_white.png"></image>
+                <view class="classname">{{item.dz}}</view>
+              </view>
+            </view>
+            <view class="sw_item_title" id="{{item.id}}" bindtap="onclick">{{item.title}}</view>
+            <text class="year-time" id="{{item.id}}" bindtap="onclick">{{item.date}}</text>
+
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</block>

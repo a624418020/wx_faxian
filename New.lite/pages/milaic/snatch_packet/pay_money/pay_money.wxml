@@ -1,0 +1,44 @@
+<view class='head'>
+  <image class='head_logo' src='{{sponsor_avatar}}'></image>
+  <view class='head_name'>{{sponsor_name}}</view>
+  <view class='i_t_type' style='margin-top: 40rpx;'>
+    <image class='key_image' src='/images/icon_microphone.png'></image>
+    <view class='head_key'>{{say}}</view>
+  </view>
+  <!-- disabled='{{sy_counts<=0}}' -->
+  <button class='head_bt' wx:if='{{sy_counts==1}}' style='{{button_style}}' bindtouchstart='bindtouchstart' bindtouchend='bindtouchend'>按住说出以上口令领取红包</button>
+  <button class='head_bt_end' wx:if='{{sy_counts==-1}}'>{{head_bt_end}}</button>
+  <view wx:if='{{sy_counts==0}}' class='sum_view'>
+    <view class='sum'>{{total_money}}</view>
+    <view class='sum11'>元</view>
+  </view>
+  <view class='bar'>
+    <view class='i_t_type' bindtap='cash_bt'>
+      <image class='i_t_type_image' src='/images/icon_money.png'></image>
+      <view>提现</view>
+    </view>
+    <view class='i_t_type' bindtap='generate_money'>
+      <image class='i_t_type_image' style='width: 30rpx;height:36rpx;' src='/images/icon_give.png'></image>
+      <view>我也发一个</view>
+    </view>
+    <view class='i_t_type' bindtap='share_bt'>
+      <image class='i_t_type_image' src='/images/icon_share_red.png'></image>
+      <view>分享</view>
+    </view>
+  </view>
+</view>
+<view class='waist'>共{{packet.total}}元，已领取{{packet.number}}/{{packet.total_n}}个</view>
+<block wx:for='{{log_list}}'>
+  <view class='list'>
+    <image class='volunteer_logo' src='{{item.avatar}}'></image>
+    <view class='list_view'>
+      <view class='list_name'>{{item.nickname}}</view>
+      <view wx:if='{{onPlay!=index}}' class='voice' bindtap='voice' data-id='{{index}}'>{{item.voice_time}}'' </view>
+      <view wx:if='{{onPlay==index}}' class='voice' bindtap='voice' data-id='{{index}}'>播放中..</view>
+    </view>
+    <view class='help_view'>
+      <view class='list_name' style='margin-top: 30rpx; font-weight:700;'>{{item.money}} 元</view>
+      <view class='list_time'>{{item.create_time}}</view>
+    </view>
+  </view>
+</block>

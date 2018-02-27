@@ -1,0 +1,44 @@
+/* pages/milaic/opinion/opinion.wxss */
+
+.line2 {
+  background: rgb(241, 241, 241);
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 28rpx;
+  padding-left: 30rpx;
+  color: rgb(153, 153, 153);
+}
+
+.viewtextarea {
+  display: flex;
+  width: 690rpx;
+  margin-left: 30rpx;
+  font-size: 24rpx;
+}
+
+
+
+.textarea {
+  flex: 1;
+  min-height: 690rpx;
+  padding: 10rpx;
+  margin-top: 20rpx;
+}
+
+.textarea1 {
+  width: 90%
+}
+
+.textarea_placeholder {
+  color: rgb(153, 153, 153);
+}
+
+.button {
+  position: fixed;
+  bottom: 36px;
+  height: 90rpx;
+  width: 92%;
+  margin-left: 4%;
+  color: white;
+  background: rgb(33, 36, 42);
+}

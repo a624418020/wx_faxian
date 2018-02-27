@@ -1,0 +1,165 @@
+/* pages/milaic/snatch_packet/partake/partake.wxss */
+.canvas {
+  height: 100vh;
+  width: 100%;
+  z-index: 100
+}
+.view01{
+  position: absolute
+}
+.BG {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.loge {
+  position: fixed;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  height: 182rpx;
+  width: 182rpx;
+  margin-left: 284rpx;
+  margin-top: 30rpx;
+}
+
+.title1 {
+  width: 100%;
+  position: fixed;
+  top: 250rpx;
+  right: 0;
+  color: #ffe5b5;
+  font-size: 34rpx;
+  text-align: center;
+}
+
+.title2 {
+  width: 100%;
+  position: fixed;
+  top: 350rpx;
+  right: 0;
+  color: #eccf9b;
+  font-size: 40rpx;
+  text-align: center;
+}
+
+.logo_bg {
+  position: fixed;
+  top: 450rpx;
+  width: 300rpx;
+  height: 300rpx;
+  left: 225rpx;
+}
+
+.logo {
+  position: fixed;
+  top: 478rpx;
+  width: 246rpx;
+  height: 246rpx;
+  left: 254rpx;
+}
+
+.fx_bt {
+  position: absolute;
+  width: 688rpx;
+  height: 350rpx;
+  display: flex;
+  background: white;
+  border-radius: 12rpx;
+  left: 31rpx;
+  top: 800rpx;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.friends {
+  border-radius: 8rpx;
+  background: #1AAD19;
+  border: 1px solid #148a14;
+  width: 626rpx;
+  height: 84rpx;
+  color: white;
+  text-align: center; /*水平居中*/
+  line-height: 84rpx; /*行距设为与div高度一致*/
+}
+.FriendsCircle {
+  border-radius: 8rpx;
+  background: #F9F8F8;
+  border: 1px solid #C7C7C7;
+  width: 626rpx;
+  height: 84rpx;
+  text-align: center; /*水平居中*/
+  line-height: 84rpx; /*行距设为与div高度一致*/
+}
+.return1{
+  font-size: 28rpx;
+  color: #888888;
+}
+.pop_a {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop {
+  width: 614rpx;
+  height: 726rpx;
+  margin-bottom: 200rpx;
+  background: white;
+  border-radius: 6rpx;
+    z-index: 20;
+}
+
+.pop_image {
+  margin: 2%;
+  width: 96%;
+  height: 50%;
+    z-index: 20;
+}
+
+.pop_text {
+  display: absolute;
+  height: 46%;
+  flex-direction: column;
+   justify-content:space-around;
+  text-align:center;
+  align-items: center;
+    z-index: 20;
+}
+.text1{
+  font-size: 36rpx;
+
+}
+.text2{
+  line-height:1.8;
+  font-size: 24rpx;
+}
+.mask {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.6;
+  background: #21242a;
+  z-index: 10;
+}
+.ok{
+  align-self:flex-end;
+  line-height: 60rpx;
+  border-top:1px solid #EBEBEB;
+  height: 60rpx;
+  width: 100%;
+  font-size: 28rpx;
+}
+
+

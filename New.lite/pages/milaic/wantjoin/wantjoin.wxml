@@ -1,0 +1,30 @@
+<!--pages/milaic/wantjoin/wantjoin.wxml-->
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="line0"></view>
+<view class="hend">“填写信息，让我们了解你”</view>
+<view class="view">
+  <view class="name">姓名</view>
+  <input class="input" placeholder-style="text-align:right" name="name" placeholder-class="placeholder" value="{{form.name}}" placeholder="请填写" />
+</view>
+<view class="line"></view>
+<view class="view">
+  <view class="name">手机</view>
+  <input class="input" placeholder-style="text-align:right"  value="{{form.tel}}" name="tel"placeholder-class="placeholder" placeholder="请填写" />
+</view>
+<view class="line"></view>
+<view class="view">
+  <view class="name">居住地</view>
+  <input class="input" value="{{form.address}}"  placeholder-style="text-align:right" name="address"placeholder-class="placeholder" placeholder="请填写" />
+</view>
+<view class="line"></view>
+<view class="view">
+  <view class="name">个人简介</view>
+  <input class="input" disabled="true" placeholder-style="text-align:right" placeholder-class="placeholder"  />
+</view>
+<view class="viewtextarea">
+  <textarea class="textarea" maxlength="800" name="summary"  value="{{form.summary}}"  cursor-spacing="20" placeholder-class="textarea_placeholder" placeholder="{{txt1}}" />
+</view>
+
+<button formType="submit" class="button">提交申请</button>
+</form>

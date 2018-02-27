@@ -1,0 +1,37 @@
+
+<!--new_one.wxml-->
+<template name="new_one">
+  
+  <block wx:for="{{is_headlines}}" wx:key="key">
+
+   <view wx:if="{{item.type=='1'}}" class="head" id="{{item.id}}" bindtap="onclick">
+      <image class="head-image" src="{{item.logo}}" mode="aspectFill">
+        <image class="shadow" src="/images/shadow.png"></image>
+        <view class="head-text">{{item.title}}
+        </view>
+      </image>
+    </view>
+    <view wx:if="{{item.type==2}}" class="bug-image" id="{{item.id}}" bindtap="onclick">
+      <view class="image-2">
+        <image class="head-image" src="{{item.logo}}" mode="aspectFill"></image>
+      </view>
+      <view class="title">
+        <view>{{item.title}} </view>
+        <view class="information">{{item.information}}</view>
+      </view>
+    </view>
+    <view wx:if="{{item.type==3}}" class="small-image" id="{{item.id}} " bindtap="onclick">
+      <view class="content">
+        <view class="words">
+          <view class="title-data">{{item.title}}</view>
+          <view class="information1">
+            <view class="time101">发现 {{item.date}}</view>
+          </view>
+        </view>
+        <view class="view-image">
+          <image class="image" src="{{item.logo}}" mode="aspectFill"></image>
+        </view>
+      </view>
+    </view>
+  </block>
+</template>

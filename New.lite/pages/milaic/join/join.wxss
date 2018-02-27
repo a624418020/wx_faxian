@@ -1,0 +1,153 @@
+/* pages/milaic/join/join.wxss */
+
+.page {
+  height: 800rpx;
+}
+
+.translucent {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0.5;
+  z-index: 9900;
+}
+
+.taost_main {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9900;
+}
+
+.taost {
+  position: fixed;
+  width: 574rpx;
+  height: 518rpx;
+  top: 300rpx;
+  left: 88rpx;
+  background: white;
+  z-index: 9901;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.taost_button {
+  height: 72rpx;
+  width: 346rpx;
+  font-size: 14px;
+  border-radius: 36rpx;
+  background: linear-gradient(to right, #a9b1b9, #232629);
+  margin-bottom: 48rpx;
+  color: white;
+  text-align: center; /*水平居中*/
+  line-height: 72rpx; /*行距设为与div高度一致*/
+    z-index: 9901;
+}
+
+.taost_text {
+  height: 140rpx;
+  width: 400rpx;
+  text-align: center; /*水平居中*/
+  color: #787878;
+  font-size: 12px;
+    z-index: 9901;
+}
+.taost_text1 {
+  height: 140rpx;
+  width: 400rpx;
+  text-align: center; /*水平居中*/
+  color: #787878;
+  font-size: 12px;
+  margin-bottom: 6px;
+    z-index: 9901;
+}
+.taost_image {
+  position: fixed;
+  width: 294rpx;
+  height: 256rpx;
+  top: 230rpx;
+  left: 247rpx;
+  z-index: 9901;
+}
+
+.line0 {
+  background: rgb(216, 216, 216);
+  width: 100%;
+  height: 2rpx;
+}
+
+.hend {
+  height: 246rpx;
+  line-height: 280rpx;
+  color: rgb(33, 36, 42);
+  font-size: 36rpx;
+  text-align: center;
+}
+
+.view {
+  display: flex;
+  font-size: 30rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  align-items: center;
+  margin-top: 34rpx;
+}
+
+.name {
+  color: rgb(33, 36, 42);
+}
+
+.input {
+  flex: 1;
+  margin-left: 40rpx;
+  
+}
+
+.line {
+  background: rgb(241, 241, 241);
+  height: 2rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 34rpx;
+}
+
+.viewtextarea {
+  display: flex;
+  width: 690rpx;
+  margin-left: 30rpx;
+  font-size: 24rpx;
+}
+
+.textarea {
+  flex: 1;
+  min-height: 200rpx;
+  background: rgb(245, 245, 245);
+  padding: 10rpx;
+  margin-top: 20rpx;
+}
+
+.placeholder {
+  color: rgb(221, 221, 221);
+}
+
+.textarea_placeholder {
+  color: rgb(153, 153, 153);
+}
+
+.button {
+  position: fixed;
+  bottom: 36rpx;
+  left: 0;
+  height: 90rpx;
+  width: 92%;
+  margin-left: 4%;
+  color: white;
+  background: rgb(33, 36, 42);
+  z-index: 999;
+}

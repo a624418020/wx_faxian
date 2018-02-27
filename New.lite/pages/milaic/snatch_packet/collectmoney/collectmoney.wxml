@@ -1,0 +1,44 @@
+<!--pages/milaic/snatch_packet/collectmoney/collectmoney.wxml-->
+<!-- <button class='contact' open-type="contact">联系客服</button> -->
+<!-- <view class='bg'>
+  <view class='view1'>
+    <view class='heading'>账户余额</view>
+    <view class='view1_1'>10.89</view>
+  </view>
+  <view class='view2'>提现金额</view>
+  <view class='view3'>
+    <view class='heading'>￥</view>
+    <input class='input'></input>
+  </view>
+  <view class='view4'></view>
+  <view class='view5'>
+    <view class='view5_1'>提现到微信钱包,</view>
+    <view class='view5_2' bindtap='all' style='color: rgb(83, 104, 145); width: 204rpx;'>全部提现</view>
+  </view>
+  <view class='withdraw' bindtap='withdraw'>提现</view>
+  <view class='view6'>1-5个工作日到账</view>
+</view> -->
+
+<view class='view'>
+  <view class='l_r_view'>
+    <view class='title'>账户余额:</view>
+    <view class='content'>{{Amount}}</view>
+  </view>
+    <view class='view_t3'>
+    <image class='view_t3_image' src='/images/icon_remind.png'></image>
+    <view >请填写与开通微信钱包一致的姓名和手机号，否则可能提现失败~</view>
+    </view>
+  <!-- <view class='view_t3'>请填写与开通微信钱包一致的姓名和手机号，否则可能提现失败~</view> -->
+  <view class='l_r_view ' style='margin-top: 40rpx;'>
+    <view class='title'>姓名:</view>
+    <input class='name' value='{{PI.real_name}}' bindinput='name' maxlength="6"></input>
+  </view>
+  <view class='line'></view>
+  <view class='l_r_view ' style='margin-top: 40rpx;'>
+    <view class='title'>手机号码:</view>
+    <input class='number' value='{{PI.t_number}}' bindinput='t_number' maxlength="11" type="number"></input>
+  </view>
+  <view class='line'></view>
+  <view class='head_bt' bindtap='withdraw'>全部提现</view>
+  <view class='view_t1'>提现到微信钱包，1-5个工作日到账</view>
+</view>

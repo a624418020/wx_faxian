@@ -1,0 +1,30 @@
+
+<!--index.wxml-->
+<import src="/wxSearch/wxSearch.wxml" />
+<view class="wxSearch-section">
+  <view class="wxSearch-pancel">
+    <view class="chaxun">
+      <image class="input_image" src="/images/icon_search_search.png"></image>
+      <input class="input" bindinput="wxSearchInput" placeholder-style="font-size:26rpx;background-color: #f7f7f7;color:#d8d8d8" focus="ture" bindfocus="wxSerchFocus" value="{{wxSearchData.value}}"  class="wxSearch-input"  bindconfirm="bindconfirm" confirm-type="search" placeholder="请输入您想要查询的内容" />
+      <image bindtap="delete_image" class="delete_image" src="/images/icon_unget.png"></image>
+    </view>
+   <view class="wxSearch-button" bindtap="wxSearchFn">搜索</view>
+  </view>
+</view>
+<template is="wxSearch"  data="{{wxSearchData,ad}}" />
+<block wx:for="{{objectArray}}" wx:key="key">
+  <view class="small-image" id="{{item.id}}" bindtap="onclick">
+    <view class="content">
+      <view class="view-image">
+        <image class="image" src="{{item.logo}}" mode="aspectFill"></image>
+      </view>
+      <view class="words">
+        <view class="title-data">{{item.title}}</view>
+        <view class="information">
+          <view class="time">发现 {{item.date}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+
